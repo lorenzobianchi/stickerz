@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Stickers from './pages/Stickers'
+import Rotondi from './pages/Rotondi'
 import Home from './pages/Home'
 import './App.css';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -17,7 +17,7 @@ function App() {
       <Router>
         <div>
           <Route exact path="/" component={Home}/>
-          <Route exact path="/stickers" component={Stickers}/>
+          <Route exact path="/rotondi" component={Rotondi}/>
         </div>
       </Router>
     </React.Fragment>

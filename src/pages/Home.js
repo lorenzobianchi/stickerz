@@ -8,6 +8,9 @@ import cyan from '@material-ui/core/colors/cyan'
 import blue from '@material-ui/core/colors/blue'
 import CategoryCard from '../components/CategoryCard'
 import AlarmIcon from '@material-ui/icons/Alarm'
+import Typography from '@material-ui/core/Typography';
+import Paper from '@material-ui/core/Paper';
+
 
 const styles = theme => ({
   claimContainer: {
@@ -21,6 +24,9 @@ const styles = theme => ({
   gridRight: {
     flex: 1,
     background: cyan[100],
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   claim: {
     fontSize: 74,
@@ -30,13 +36,28 @@ const styles = theme => ({
   },
   paper: {
     padding: theme.spacing.unit * 2,
-    textAlign: 'center',
     color: theme.palette.text.secondary,
-    background: blueGrey[900],
   },
   cardsContainer: {
     paddingTop: 30,
     background: blue[100],
+  },
+  scene: {
+    width: 200,
+    height: 200,
+    border: '1px solid #CCC',
+    margin: 40,
+  },
+ panel: {
+    width: '100%',
+    height: '100%',
+    background: 'linear-gradient(45deg, #333 20%, darkslategrey 90%)',
+    /* perspective function in transform property */
+    transform: 'perspective(600px) rotateY(45deg)',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    color: 'white',
   }
 });
 
@@ -50,9 +71,16 @@ function Home(props) {
               <h1 className={classes.claim}>Sickerz,<br/>adesivi personalizzati che spaccano!</h1>
             </div>
             <div className={classes.gridRight}>
-
+              <div className={classes.scene}>
+                <div className={classes.panel}><h1 className='nanum'>Stickerz</h1></div>
+              </div>
             </div>
         </div>
+        <Paper className={classes.paper} elevation={4}>
+          <Typography variant="headline" component="h2">
+            Scegli il tipo di adesivo che preferisci
+          </Typography>
+        </Paper>
         <TitlebarGridList />
       </div>
     )

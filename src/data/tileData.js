@@ -1,30 +1,34 @@
 import auto from '../assets/auto.jpeg';
 import blu from '../assets/blu.jpg';
-import dap from '../assets/dap.jpg';
+import house from '../assets/house.jpeg';
 import desktop from '../assets/desktop.jpeg';
 import orso from '../assets/orso.jpg';
 import red from '../assets/red.jpg';
-import tipa from '../assets/tipa.jpg';
-import moto from '../assets/moto.jpeg';
+import quadrati from '../assets/quadrati.jpeg';
+import rotondi from '../assets/rotondi.jpg';
 
 
 const tileData = [
   {
-    img: tipa,
-    title: 'Image',
+    img: rotondi,
+    title: 'Rotondi',
     author: 'author',
     col: 2,
+    link: 'rotondi',
   },
   {
-    img: orso,
-    title: 'Image',
+    img: quadrati,
+    title: 'Quadrati',
     author: 'author',
     col: 1,
+    link: 'quadrati'
   },
   {
     img: red,
-    title: 'Image',
+    title: 'Adesivi da auto',
     author: 'author',
+    col: 1,
+    link: 'auto'
   },
   {
     img: auto,
@@ -32,22 +36,13 @@ const tileData = [
     author: 'author',
   },
   {
-    img: dap,
-    title: 'Image',
+    img: house,
+    title: 'Scritte in vinile',
     author: 'author',
+    link: 'vinile'
   },
   {
     img: desktop,
-    title: 'Image',
-    author: 'author',
-  },
-  {
-    img: tipa,
-    title: 'Image',
-    author: 'author',
-  },
-  {
-    img: moto,
     title: 'Image',
     author: 'author',
   },
