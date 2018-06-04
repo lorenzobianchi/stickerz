@@ -6,7 +6,7 @@ import orso from '../assets/orso.jpg';
 import red from '../assets/red.jpg';
 import quadrati from '../assets/quadrati.jpeg';
 import rotondi from '../assets/rotondi.jpg';
-
+import vetro from '../assets/vetro.jpg'
 
 const tileData = [
   {
@@ -46,6 +46,14 @@ const tileData = [
     title: 'Image',
     author: 'author',
   },
+  {
+    img: vetro,
+    title: 'Vetrofanie',
+    author: 'author',
+    col: 2,
+    link: 'vetrofanie',
+  },
+
 ];
 
 export default tileData
